@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+
+
+/* ----------------------- GENERAL STYLES ------------------------ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  /*background: linear-gradient(90deg, #ffaacc, #e07694);*/
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/*@-webkit-keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackgroundGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}*/
+
+p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.header {
+  display: block;
+  margin: auto;
+  width: 100vw;
+  height: 15%;
+  font-family: 'Montserrat', sans-serif;
+  color: #c32520;
+  font-weight: 700;
+  font-size: 7em;
+
+  margin: 1rem;
+}
+
+.middleContainer {
+  display: block;
+  width: 100vw;
+  height: 75%;
+}
+
+/* ----------------------- MENU BAR STYLES ------------------------ */
+
+.menuBar {
+  width: 100vw;
+  height: 10%;
+  background-color: black;
+}
+
+.logo {
+  width: 5em;
+  float: left;
+  margin-left: 2em;
+  margin-top: 0.75em; 
+}
+
+.citySelector {
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+}
+
+/* ----------------------- PROGRESS LABEL STYLES ------------------------ */
+
+.demandLabel {
+  display: block;
+  margin: auto;
+  color: #c32520;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+}
+
+.progressLabel {
+  padding: 0;
+  width: 33%;
+  display: inline-flex;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.demandLevelLabel {
+ fill: #ffffff;
+ text-anchor: middle;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 700;
+ font-size: 5em; 
+}
+
+/* ----------------------- WEATHER STYLES ------------------------ */
+
+.weather {
+  display: inline-flex;
+  width: 30%;
+  height: 30%;
+  border: 5px solid #c32520;
+  border-radius: 15px;
+  float: left;
+  margin-left: 2em;
+  margin-top: 10%;
+}
+
+.weatherIcon {
+
+}
+
+.tempLabel {
+  display: block;
+  position: relative;
+  color: #c32520;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+
+.weatherLabel {
+  display: block;
+  position: absolute;
+  color: #c32520;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 1em;
+}
+
+/* ----------------------- DATE STYLES ------------------------ */
+
+.date {
+  display: inline-flex;
+  width: 30%;
+  height: 30%;
+  border: 5px solid #c32520;
+  border-radius: 15px;
+  float: right;
+  margin-right: 2em;
+  margin-top: 8%;
+}
+
+.dayLabel {
+  display: block;
+  position: relative;
+  color: #c32520;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+.timeLabel {
+  display: block;
+  color: #c32520;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  font-weight: 500;
+  margin-top: 1em;
+
+}
+
+.dateIcon {
+
+}
+
+
+
+/* ----------------------- RESPONSIVE STYLES ------------------------ */
+
+@media all and (max-width: 1350px) {
+
+}
+
+@media all and (max-width: 900px) and (max-device-width: 900px){
+
+}
+
+@media all and (max-width: 750px) and (max-device-width: 750px) {
+  
+}
+
+
