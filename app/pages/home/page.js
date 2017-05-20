@@ -8,6 +8,7 @@ import React from 'react';
 import { browserHistory } from 'react-router';
 import styles from "./style.css";
 import MediaQuery from 'react-responsive';
+import DarkSkyApi from 'dark-sky-api';
 
 import Avatar from 'material-ui/Avatar';
 import IconButton from 'material-ui/IconButton';
@@ -19,6 +20,36 @@ import DayIcon from 'material-ui/svg-icons/action/today';
 import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
 
 import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
+
+import {RadialBarChart, RadialBar, Legend} from 'recharts';
+
+// Dark Sky API configuration for weather data: 
+DarkSkyApi.apiKey = '6d0fac966fa45fd88bcb2234eb03d191';
+
+const downtownIndy = {
+  latitude: 39.7776023, 
+  longitude: -86.1555877
+};
+
+const bloomington = {
+  latitude: 39.1709369, 
+  longitude: -86.500373
+};
+
+// Current weather:
+// DarkSkyApi.loadCurrent(downtownIndy)
+//   .then(result => console.log(result));
+
+// Forecasted week:
+// DarkSkyApi.extendHourly(true);
+// DarkSkyApi.loadForecast(downtownIndy)
+//   .then(result => console.log(result));
+
+
+DarkSkyApi.loadItAll('minutely,alerts,flags', downtownIndy) // just return daily and hourly
+  .then(result => console.log(result));
+
+  DarkSkyApi.extendHourly(true);
 
 const days = [
   {key: 0, name: 'Sunday'},
