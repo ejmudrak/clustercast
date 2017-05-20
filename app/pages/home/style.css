@@ -7,6 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 
   /*background: linear-gradient(90deg, #ffaacc, #e07694);*/
   background-size: cover;
@@ -42,28 +43,24 @@ p {
 }
 
 .header {
+  width: 100%;
   display: block;
   margin: auto;
-  width: 100vw;
+  text-align: center;
+  /*margin-left: 4em;*/
+  /*margin-right: 4em;*/
   height: 15%;
   font-family: 'Montserrat', sans-serif;
   color: #c32520;
   font-weight: 700;
-  font-size: 7em;
+  font-size: 6em;
 
-  margin: 1rem;
-}
-
-.middleContainer {
-  display: block;
-  width: 100vw;
-  height: 75%;
 }
 
 /* ----------------------- MENU BAR STYLES ------------------------ */
 
 .menuBar {
-  width: 100vw;
+  width: 100%;
   height: 10%;
   background-color: black;
 }
@@ -81,14 +78,71 @@ p {
   margin-top: 1em;
 }
 
+/* ----------------------- FORECAST STYLES ------------------------ */
+
+.forecastContainer {
+  width: 100%;
+  height: 15%;
+
+}
+
+.forecast {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  background-color: #c32520;
+}
+
+.hourMarkContainer {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  margin-top: 1em;
+}
+
+.hourMark {
+  width: 6.25%;
+  border-left: 2px solid darkgray;
+  margin-right: 8.15%;
+}
+
+.hourLabels {
+
+}
+
+.chart {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: -8em;
+}
+
+.xAxis {
+  font-family: 'Montserrat', sans-serif !important;
+}
+XAxis {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.daySelectorContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
 /* ----------------------- PROGRESS LABEL STYLES ------------------------ */
 
 .demandLabel {
+  width: 100%;
   display: block;
   margin: auto;
+  text-align: center;
   color: #c32520;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .progressLabel {
