@@ -141,7 +141,7 @@ export default class Home extends React.Component {
       cityValue: 1,
       demand: 70,
       isOpen: true,
-      selectedData: monToThursData,
+      selectedData: days,
       selectedDayIndex: 3,
       selectedDay: 'Wednesday',
       isRaining: false,
@@ -232,7 +232,7 @@ export default class Home extends React.Component {
                     <stop offset="95%" stopColor="#ffffff" stopOpacity={0}/>
                   </linearGradient>
               </defs>
-              <XAxis className={styles.xAxis} dataKey="time" />
+              <XAxis className={styles.xAxis} dataKey="name" />
               <YAxis/>
               <CartesianGrid strokeDasharray="3 3"/>
               <Tooltip/>
