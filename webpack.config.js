@@ -26,8 +26,7 @@ module.exports = {
         test: /\.css$/,
         loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
       },
-      { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" },
-      { test: /\.png$/, loader: "url-loader?limit=10000&mimetype=image/png" },
+      { test: /\.(png|.svg|jpg|ico)$/, loader: 'url-loader?limit=500000' },
 
     ],
   },

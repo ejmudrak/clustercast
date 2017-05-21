@@ -7,7 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 
   /*background: linear-gradient(90deg, #ffaacc, #e07694);*/
   background-size: cover;
@@ -42,20 +42,7 @@ p {
 	height: 100vh;
 }
 
-.header {
-  width: 100%;
-  display: block;
-  margin: auto;
-  text-align: center;
-  /*margin-left: 4em;*/
-  /*margin-right: 4em;*/
-  height: 15%;
-  font-family: 'Montserrat', sans-serif;
-  color: #c32520;
-  font-weight: 700;
-  font-size: 6em;
 
-}
 
 /* ----------------------- MENU BAR STYLES ------------------------ */
 
@@ -78,45 +65,41 @@ p {
   margin-top: 1em;
 }
 
-/* ----------------------- FORECAST STYLES ------------------------ */
+/* ----------------------- HEADING STYLES ------------------------ */
 
-.forecastContainer {
+.header {
   width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  /*margin-left: 4em;*/
+  /*margin-right: 4em;*/
   height: 15%;
-
+  font-family: 'Montserrat', sans-serif;
+  color: #f25f23;
+  font-weight: 700;
+  font-size: 6em;
 }
 
-.forecast {
+.demandLabel {
+  width: 100%;
   display: block;
   margin: auto;
-  width: 75%;
-  height: 100%;
-  background-color: #c32520;
+  text-align: center;
+  color: #f25f23;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.hourMarkContainer {
-  display: block;
-  margin: auto;
-  width: 75%;
-  height: 100%;
-  margin-top: 1em;
-}
-
-.hourMark {
-  width: 6.25%;
-  border-left: 2px solid darkgray;
-  margin-right: 8.15%;
-}
-
-.hourLabels {
-
-}
+/* ----------------------- FORECAST STYLES ------------------------ */
 
 .chart {
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: -8em;
+  margin-top: 1em;
 }
 
 .xAxis {
@@ -132,18 +115,8 @@ XAxis {
   bottom: 0;
 }
 
-/* ----------------------- PROGRESS LABEL STYLES ------------------------ */
 
-.demandLabel {
-  width: 100%;
-  display: block;
-  margin: auto;
-  text-align: center;
-  color: #c32520;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  margin-bottom: 1em;
-}
+/* ----------------------- PROGRESS LABEL STYLES ------------------------ */
 
 .progressLabel {
   padding: 0;
@@ -160,84 +133,6 @@ XAxis {
  font-weight: 700;
  font-size: 5em; 
 }
-
-/* ----------------------- WEATHER STYLES ------------------------ */
-
-.weather {
-  display: inline-flex;
-  width: 30%;
-  height: 30%;
-  border: 5px solid #c32520;
-  border-radius: 15px;
-  float: left;
-  margin-left: 2em;
-  margin-top: 10%;
-}
-
-.weatherIcon {
-
-}
-
-.tempLabel {
-  display: block;
-  position: relative;
-  color: #c32520;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
-  font-weight: 700;
-  margin-top: 15%;
-  margin-left: 60%;
-}
-
-.weatherLabel {
-  display: block;
-  position: absolute;
-  color: #c32520;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  margin: 1em;
-}
-
-/* ----------------------- DATE STYLES ------------------------ */
-
-.date {
-  display: inline-flex;
-  width: 30%;
-  height: 30%;
-  border: 5px solid #c32520;
-  border-radius: 15px;
-  float: right;
-  margin-right: 2em;
-  margin-top: 8%;
-}
-
-.dayLabel {
-  display: block;
-  position: relative;
-  color: #c32520;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  font-weight: 500;
-  margin-top: 0.5em;
-  margin-left: 1em;
-}
-
-.timeLabel {
-  display: block;
-  color: #c32520;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
-  font-weight: 500;
-  margin-top: 1em;
-
-}
-
-.dateIcon {
-
-}
-
-
 
 /* ----------------------- RESPONSIVE STYLES ------------------------ */
 
