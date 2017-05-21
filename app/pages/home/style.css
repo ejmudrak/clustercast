@@ -8,28 +8,7 @@ html, body {
   margin: 0;
   padding: 0;
   /*overflow-y: hidden;*/
-
-  /*background: linear-gradient(90deg, #ffaacc, #e07694);*/
-  background-size: cover;
-  background-attachment: fixed;
-
 }
-
-/*@-webkit-keyframes BackgroundGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes BackgroundGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes BackgroundGradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}*/
 
 p {
   color: white;
@@ -42,8 +21,6 @@ p {
 	height: 100vh;
 }
 
-
-
 /* ----------------------- MENU BAR STYLES ------------------------ */
 
 .menuBar {
@@ -53,16 +30,18 @@ p {
 }
 
 .logo {
-  width: 5em;
+  width: 4em;
   float: left;
   margin-left: 2em;
-  margin-top: 0.75em; 
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; 
 }
 
 .citySelector {
   display: block;
+  height: 100%;
   margin: auto;
-  margin-top: 1em;
+  /*margin-top: 1em;*/
 }
 
 /* ----------------------- HEADING STYLES ------------------------ */
@@ -72,13 +51,12 @@ p {
   display: block;
   margin: auto;
   text-align: center;
-  /*margin-left: 4em;*/
-  /*margin-right: 4em;*/
   height: 15%;
   font-family: 'Montserrat', sans-serif;
   color: #f25f23;
   font-weight: 700;
   font-size: 6em;
+  letter-spacing: 0.15em;
 }
 
 .demandLabel {
@@ -92,6 +70,39 @@ p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+.detailsLabel {
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: gray;
+}
+
+.orderContainer {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.orderButton {
+  width: 8em;
+  display: block !important;
+  margin: auto !important;
+}
+
+.peakLabel {
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: gray;
+  margin-top: 3em;
+  margin-bottom: -3.75em;
+}
 
 /* ----------------------- FORECAST STYLES ------------------------ */
 
@@ -99,13 +110,12 @@ p {
   width: 100%;
   display: block;
   margin: auto;
-  margin-top: 1em;
+  /*float: left;*/
+  margin-top: 0.25em;
+  margin-bottom: 1em;
 }
 
 .xAxis {
-  font-family: 'Montserrat', sans-serif !important;
-}
-XAxis {
   font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -116,36 +126,76 @@ XAxis {
 }
 
 
-/* ----------------------- PROGRESS LABEL STYLES ------------------------ */
+/* ----------------------- DEMAND STATUS STYLES ------------------------ */
 
-.progressLabel {
-  padding: 0;
-  width: 33%;
-  display: inline-flex;
+.demandContainer {
+  width: 100%;
+  display: block;
   margin: auto;
-  margin-top: 5em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.demandLevelLabel {
- fill: #ffffff;
- text-anchor: middle;
- font-family: 'Montserrat', sans-serif;
- font-weight: 700;
- font-size: 5em; 
+.burgerIcon {
+  width: 5em;
+  display: inline-block;
+  margin: auto;
+}
+
+.statusLabelContainer {
+  height: 100%;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.statusDesc {
+    width: 100%;
+    display: block;
+    margin: auto;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em; 
+}
+
+.statusLabel {
+  width: 100%;
+  display: block;
+  margin: auto;
+  color: #f25f23;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2em; 
+
 }
 
 /* ----------------------- RESPONSIVE STYLES ------------------------ */
 
-@media all and (max-width: 1350px) {
-
+@media all and (max-width: 875px) and (max-device-width: 875px) {
+  .header { font-size: 5em; letter-spacing: 0; }
+}
+@media all and (max-width: 615px) and (max-device-width: 615px) {
+  .header { font-size: 4em; }
+}
+@media all and (max-width: 500px) and (max-device-width: 500px) {
+  .header {
+    font-size: 3.5em;
+    margin-bottom: -0.5em;
+  }
+  .demandLabel {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  .chart { margin-left: -2em; }
 }
 
-@media all and (max-width: 900px) and (max-device-width: 900px){
-
-}
-
-@media all and (max-width: 750px) and (max-device-width: 750px) {
-  
+@media all and (max-width: 430px) and (max-device-width: 430px) {
+  .header {
+    font-size: 2.5em;
+    margin-bottom: -0.5em;
+  }
+  .detailsLabel { font-size: 0.9em; }
+  /*.logo { width: 3.5em; margin-top: 0.35em; margin-left: 0.75em; }*/
 }
 
 
