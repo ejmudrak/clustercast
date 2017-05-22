@@ -1,6 +1,7 @@
 {
   "name": "clustercast",
   "description": "Predicts demand for Clustertruck goods based on forecast",
+  "homepage": "https://ejmudrak.github.io/clustercast",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress --colors --content-base app --port 8080",
     "build": "webpack -p --progress --config webpack.production.config.js",
@@ -9,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ejmudrak/clustercast.git"
+    "url": "https://github.com/ejmudrak/clustercast"
   },
   "dependencies": {
     "material-ui": "^0.17.0",

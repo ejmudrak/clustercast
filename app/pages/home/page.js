@@ -9,7 +9,6 @@ import { browserHistory } from 'react-router';
 import styles from "./style.css";
 import MediaQuery from 'react-responsive';
 import DarkSkyApi from 'dark-sky-api';
-import ProgressLabel from 'react-progress-label'
 
 // Material UI Component imports:
 import RaisedButton from 'material-ui/RaisedButton';
@@ -17,11 +16,13 @@ import DropdownMenu from 'material-ui/DropdownMenu';
 import MenuItem from 'material-ui/MenuItem';
 
 // Icon imports:
+import LogoIcon from "./logo.png";
 import BurgerIcon from './single.png';
 
 // Recharts imports:
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine} from 'recharts';
 
+// Main data format
 const days = [
   {key: 0, name: 'Sun', demand: 0, label: ""},
   {key: 1, name: 'Mon', demand: 0, label: ""},
@@ -35,7 +36,7 @@ const days = [
 // Dark Sky API configuration for weather data: 
 DarkSkyApi.apiKey = '6d0fac966fa45fd88bcb2234eb03d191';
 
-// Locations
+// Locations obtained via Clustertruck API
 const downtownIndy = {
   latitude: 39.7776023, 
   longitude: -86.1555877
@@ -214,7 +215,7 @@ class MenuBar extends React.Component {
   render() {
     return (
       <div className={styles.menuBar}>
-      <img className={styles.logo} src="../../assets/logo.png" />
+      <img className={styles.logo} src={LogoIcon} />
       <DropdownMenu 
         className={styles.citySelector} 
         value={this.props.city} 
@@ -338,20 +339,6 @@ class DemandStatus extends React.Component {
            <div className={styles.statusDesc}>Currently we are</div>
            <div className={styles.statusLabel}>{data.label}</div>
         </div>
-         {/* <ProgressLabel 
-           className={styles.progressLabel}
-           progress={progressData}
-           startDegree={180}
-           progressWidth={60}
-           trackWidth={60}
-           cornersWidth={30}
-           size={400}
-           fillColor="white"
-           trackColor="lightgray"
-           progressColor="#f25f23"
-         >
-          <text x="200" y="225" className={styles.demandLevelLabel}>{data.label}</text>
-        </ProgressLabel> */}
       </div>
     );
   }

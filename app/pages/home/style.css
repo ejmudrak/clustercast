@@ -1,5 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+/* style.css - AUTHOR: Erik Mudrak, 2017 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 
 /* ----------------------- GENERAL STYLES ------------------------ */
@@ -7,7 +10,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  /*overflow-y: hidden;*/
 }
 
 p {
@@ -41,7 +43,6 @@ p {
   display: block;
   height: 100%;
   margin: auto;
-  /*margin-top: 1em;*/
 }
 
 /* ----------------------- HEADING STYLES ------------------------ */
@@ -86,7 +87,7 @@ p {
 }
 
 .orderButton {
-  width: 8em;
+  width: 9em;
   display: block !important;
   margin: auto !important;
 }
@@ -110,7 +111,6 @@ p {
   width: 100%;
   display: block;
   margin: auto;
-  /*float: left;*/
   margin-top: 0.25em;
   margin-bottom: 1em;
 }
@@ -195,7 +195,13 @@ p {
     margin-bottom: -0.5em;
   }
   .detailsLabel { font-size: 0.9em; }
-  /*.logo { width: 3.5em; margin-top: 0.35em; margin-left: 0.75em; }*/
+  .logo { width: 3.5em; margin-top: 0.75em; margin-left: 0.75em; margin-bottom: 0.25em; }
+}
+
+@media all and (max-width: 370px) and (max-device-width: 370px) {
+  .peakLabel { margin-bottom: -2.75em; margin-top: 1.5em; background-color: white; }
+  .logo { width: 3.25em; margin-top: 0.5em; margin-left: 0.75em; margin-bottom: 0.5em; }
+
 }
 
 
